@@ -1,6 +1,6 @@
 class Website(val domain: String, val redirectIp: String) {
     init {
-        validateIp(redirectIp);
+        validateIp(redirectIp)
     }
 
     companion object {

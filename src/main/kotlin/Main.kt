@@ -4,7 +4,7 @@ import kotlin.system.exitProcess
 
 @ExperimentalCli
 fun run(args: Array<String>, websiteManger: WebsiteManager) {
-    val argParser = ArgParser("wb");
+    val argParser = ArgParser("wb")
     // The redirect IP
     val redirectIp by argParser.option(ArgType.String, "redirect-ip", "r", description="The IP address" +
             " the blocked will be redirected to(Tip: Spin up ur own server and put the IP here)").default("0.0.0.0")
